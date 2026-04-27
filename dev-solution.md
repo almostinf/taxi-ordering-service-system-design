@@ -587,7 +587,7 @@ erDiagram
 
     DRIVER_ASSIGNMENTS {
         uuid driver_id PK "one active assignment per driver"
-        uuid order_id UNIQUE "one active driver per order"
+        uuid order_id UK "one active driver per order"
         string state "assigned|in_progress"
         timestamptz assigned_at "time of successful AssignDriver"
         timestamptz updated_at "last assignment state change"
